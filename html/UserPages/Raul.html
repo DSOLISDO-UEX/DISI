@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal - Raul</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/user-pages.css">
+</head>
+<body class="personal-page">
+    <!-- Botón de vuelta atrás -->
+    <a href="../index.html" class="back-button">
+        ← Volver al inicio
+    </a>
+    
+    <!-- Botón de cambio de tema -->
+    <button class="theme-toggle" id="themeToggle" title="Cambiar tema">🌙</button>
+    
+    <div class="container">
+        <!-- Header con nombre y foto -->
+        <header class="header">
+            <img src="https://via.placeholder.com/200x200/4caf50/ffffff?text=R" alt="Mi foto" class="profile-photo">
+            <h1 class="name">Raul [Apellido]</h1>
+            <p style="font-size: 1.2em; color: #666;">Estudiante DISI</p>
+        </header>
+
+        <!-- Información básica -->
+        <section class="content-section">
+            <h2 class="section-title">Acerca de Mí</h2>
+            <p class="paragraph">
+                ¡Hola! Soy Raul [Apellido], estudiante del Grado en Ingeniería Informática en la Universidad de Extremadura. 
+                Estoy en el tercer año y me apasiona el mundo de la programación y los sistemas.
+            </p>
+            <p class="paragraph">
+                Mi área de mayor interés es [especialización], donde me gusta explorar nuevas metodologías 
+                y técnicas que permitan crear soluciones eficientes y escalables.
+            </p>
+        </section>
+
+        <!-- Habilidades Técnicas -->
+        <section class="content-section">
+            <h2 class="section-title">Mis Habilidades Técnicas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Nivel</th>
+                        <th>Experiencia</th>
+                        <th>Proyectos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C#</td>
+                        <td>Avanzado</td>
+                        <td>2 años</td>
+                        <td>7+</td>
+                    </tr>
+                    <tr>
+                        <td>.NET</td>
+                        <td>Intermedio</td>
+                        <td>1.5 años</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>SQL Server</td>
+                        <td>Intermedio</td>
+                        <td>1 año</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td>Intermedio</td>
+                        <td>2 años</td>
+                        <td>10+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tabla de Horario -->
+        <section class="content-section">
+            <h2 class="section-title">Mi Horario de Clases</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>8:30</strong></td>
+                        <td class="subject">IC</td>
+                        <td></td>
+                        <td class="subject">ALI</td>
+                        <td></td>
+                        <td class="subject">DISI</td>
+                    </tr>
+                    <tr>
+                        <td><strong>9:00</strong></td>
+                        <td class="subject">IC</td>
+                        <td class="subject">RO</td>
+                        <td class="subject">ALI</td>
+                        <td class="lab">Lab IS</td>
+                        <td class="subject">DISI</td>
+                    </tr>
+                    <tr>
+                        <td><strong>10:00</strong></td>
+                        <td></td>
+                        <td class="subject">RO</td>
+                        <td></td>
+                        <td class="lab">Lab IS</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>10:30</strong></td>
+                        <td class="lab">Lab IC</td>
+                        <td></td>
+                        <td class="lab">Lab ALI</td>
+                        <td></td>
+                        <td class="lab">Lab DISI</td>
+                    </tr>
+                    <tr>
+                        <td><strong>11:30</strong></td>
+                        <td class="lab">Lab IC</td>
+                        <td class="subject">IS</td>
+                        <td class="lab">Lab ALI</td>
+                        <td class="lab">Lab RO</td>
+                        <td class="lab">Lab DISI</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 15px; font-size: 0.9em; color: #666;">
+                <strong>Leyenda:</strong> 
+                <span style="color: #1976d2;">■</span> Clases teóricas &nbsp;&nbsp;
+                <span style="color: #f57c00;">■</span> Laboratorios
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section class="content-section">
+            <h2 class="section-title">Formulario de Contacto</h2>
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contacto directo -->
+        <section class="content-section contact-section">
+            <h2 class="section-title">Contacto Directo</h2>
+            <p style="margin-bottom: 20px; font-size: 1.1em;">
+                ¿Prefieres contactarme directamente? Puedes enviarme un email:
+            </p>
+            <a href="mailto:raul@ejemplo.com?subject=Contacto desde tu página web" 
+               class="contact-link">
+                📧 Contactar por Email
+            </a>
+        </section>
+    </div>
+
+    <script>
+        // Funcionalidad del cambio de tema
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        // Verificar tema guardado en localStorage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
+            body.classList.add('dark-theme');
+            themeToggle.textContent = '☀️';
+            themeToggle.title = 'Cambiar a tema claro';
+        }
+        
+        themeToggle.addEventListener('click', function() {
+            body.classList.toggle('dark-theme');
+            
+            if (body.classList.contains('dark-theme')) {
+                themeToggle.textContent = '☀️';
+                themeToggle.title = 'Cambiar a tema claro';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeToggle.textContent = '🌙';
+                themeToggle.title = 'Cambiar a tema oscuro';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Animación de carga
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.container');
+            container.style.opacity = '0';
+            container.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                container.style.transition = 'all 0.6s ease';
+                container.style.opacity = '1';
+                container.style.transform = 'translateY(0)';
+            }, 100);
+            
+            // Validación del formulario
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('¡Gracias por tu mensaje! Te contactaré pronto.');
+            });
+        });
+    </script>
+</body>
+</html>

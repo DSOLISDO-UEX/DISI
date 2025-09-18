@@ -1,0 +1,349 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Botón de cambio de tema */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 1.5em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor principal */
+.main-container {
+    max-width: 1200px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    margin-bottom: 50px;
+}
+
+.main-title {
+    font-size: 3em;
+    color: #667eea;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 1.3em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.course-info {
+    font-size: 1.1em;
+    color: #888;
+    font-style: italic;
+}
+
+/* Grid de miembros */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Tarjetas de miembros */
+.member-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    border: 3px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.member-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.member-card:hover::before {
+    left: 100%;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+    border-color: #667eea;
+}
+
+/* Estados de las tarjetas */
+.member-card.active {
+    border-color: #4CAF50;
+    background: linear-gradient(135deg, #f8fff8 0%, #ffffff 100%);
+}
+
+.member-card.active::after {
+    content: '✓ Disponible';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.member-card.inactive {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.member-card.inactive::after {
+    content: 'Próximamente';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ff9800;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+/* Fotos de miembros */
+.member-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border: 4px solid #667eea;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.member-card:hover .member-photo {
+    transform: scale(1.1);
+    border-color: #4CAF50;
+}
+
+.placeholder-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+    margin: 0 auto 20px;
+    border: 4px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #999;
+    transition: all 0.3s ease;
+}
+
+.member-card:hover .placeholder-photo {
+    transform: scale(1.1);
+    border-color: #667eea;
+}
+
+/* Texto de las tarjetas */
+.member-name {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.member-role {
+    color: #667eea;
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.member-description {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #eee;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Animación shake */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Media queries - Responsive */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.2em;
+    }
+    
+    .members-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .member-card {
+        padding: 20px;
+    }
+    
+    .main-container {
+        padding: 20px;
+    }
+    
+    .theme-toggle {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 1.8em;
+    }
+    
+    .subtitle {
+        font-size: 1.1em;
+    }
+}
+
+/* ===== TEMA OSCURO ===== */
+body.dark-theme {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e0e0e0;
+}
+
+.dark-theme .main-container {
+    background: rgba(30, 30, 50, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .main-title {
+    color: #64b5f6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme .subtitle {
+    color: #b0b0b0;
+}
+
+.dark-theme .course-info {
+    color: #888;
+}
+
+.dark-theme .member-card {
+    background: rgba(40, 40, 60, 0.9);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+}
+
+.dark-theme .member-card:hover {
+    background: rgba(50, 50, 70, 0.95);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: #64b5f6;
+}
+
+.dark-theme .member-card.active {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, rgba(40, 40, 60, 0.9) 100%);
+    border-color: #4CAF50;
+}
+
+.dark-theme .member-name {
+    color: #e0e0e0;
+}
+
+.dark-theme .member-role {
+    color: #64b5f6;
+}
+
+.dark-theme .member-description {
+    color: #b0b0b0;
+}
+
+.dark-theme .member-photo {
+    border-color: #64b5f6;
+}
+
+.dark-theme .member-card:hover .member-photo {
+    border-color: #4CAF50;
+}
+
+.dark-theme .placeholder-photo {
+    background: linear-gradient(135deg, #404060 0%, #505070 100%);
+    border-color: #555;
+    color: #888;
+}
+
+.dark-theme .member-card:hover .placeholder-photo {
+    border-color: #64b5f6;
+}
+
+.dark-theme .footer {
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    color: #888;
+}
+
+.dark-theme .theme-toggle {
+    background: rgba(40, 40, 60, 0.9);
+    color: #e0e0e0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
