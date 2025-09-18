@@ -135,12 +135,18 @@ input:checked + .slider:before {
     font-style: italic;
 }
 
-/* Grid de miembros */
+/* Grid de miembros - Flexbox layout */
 .members-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 40px;
+    justify-content: center;
+}
+
+.members-grid .member-card {
+    flex: 0 1 330px;
+    max-width: 330px;
 }
 
 /* Tarjetas de miembros */
@@ -291,14 +297,25 @@ input:checked + .slider:before {
 }
 
 /* Media queries - Responsive */
+@media (max-width: 1024px) {
+    .members-grid .member-card {
+        flex: 0 1 250px;
+        max-width: 250px;
+    }
+}
+
+/* Media queries - Responsive */
 @media (max-width: 768px) {
     .main-title {
         font-size: 2.2em;
     }
     
     .members-grid {
-        grid-template-columns: 1fr;
         gap: 20px;
+    }
+    
+    .members-grid .member-card {
+        flex: 1 1 100%;
     }
     
     .member-card {
