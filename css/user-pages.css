@@ -1,32 +1,35 @@
-/* ===== ESTILOS ESPECÍFICOS PARA PÁGINAS DE USUARIO ===== */
+/* ===== ESTILOS ESPECÍFICOS PARA PÁGINAS DE USUARIO - TEMA CLARO ===== */
 
-/* Ajuste del body para página personal */
+/* Ajuste del body para página personal - TEMA CLARO */
 body.personal-page {
     display: block;
     padding: 0;
     justify-content: flex-start;
     align-items: flex-start;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     min-height: 100vh;
+    color: #2c3e50;
 }
 
-/* Contenedor para página personal */
+/* Contenedor para página personal - TEMA CLARO */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
     margin-top: 20px;
     margin-bottom: 20px;
+    animation: fadeInUp 0.6s ease forwards;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* Header página personal */
+/* Header página personal - TEMA CLARO */
 .header {
     text-align: center;
     padding: 40px 0;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid #ecf0f1;
     margin-bottom: 40px;
 }
 
@@ -35,35 +38,36 @@ body.personal-page {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #667eea;
+    border: 5px solid #3498db;
     margin-bottom: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .profile-photo:hover {
     transform: scale(1.05);
+    border-color: #2980b9;
 }
 
 .name {
     font-size: 2.5em;
-    color: #667eea;
+    color: #2c3e50;
     margin-bottom: 10px;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Botón de vuelta atrás */
+/* Botón de vuelta atrás - TEMA CLARO */
 .back-button {
     position: fixed;
     top: 20px;
     left: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border: 2px solid #667eea;
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #3498db;
     border-radius: 10px;
     padding: 10px 20px;
     text-decoration: none;
-    color: #667eea;
+    color: #3498db;
     font-weight: 600;
     transition: all 0.3s ease;
     z-index: 1000;
@@ -73,10 +77,10 @@ body.personal-page {
 }
 
 .back-button:hover {
-    background: #667eea;
+    background: #3498db;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
 }
 
 /* Botón de cambio de tema para páginas de usuario - Toggle simple y elegante */
@@ -161,23 +165,25 @@ input:checked + .slider:before {
   box-shadow: inset 15px -4px 0px 15px #efdf2b, 0 0 10px 0px #efdf2b;
 }
 
-/* Secciones de contenido */
+/* Secciones de contenido - TEMA CLARO */
 .content-section {
     margin-bottom: 40px;
     padding: 30px;
-    background: #f8f9fa;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
+    border: 1px solid #ecf0f1;
 }
 
 .content-section:hover {
     transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
     font-size: 1.8em;
-    color: #667eea;
+    color: #2c3e50;
     margin-bottom: 20px;
     text-align: center;
     font-weight: 600;
@@ -192,7 +198,7 @@ input:checked + .slider:before {
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
     border-radius: 2px;
 }
 
@@ -200,11 +206,11 @@ input:checked + .slider:before {
     font-size: 1.1em;
     text-align: justify;
     margin-bottom: 20px;
-    color: #555;
+    color: #34495e;
     line-height: 1.6;
 }
 
-/* Tablas generales */
+/* Tablas generales - TEMA CLARO */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -212,18 +218,19 @@ table {
     background: white;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ecf0f1;
 }
 
 th, td {
     padding: 15px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ecf0f1;
     transition: background-color 0.3s ease;
 }
 
 th {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
     color: white;
     font-weight: 600;
     text-transform: uppercase;
@@ -231,20 +238,20 @@ th {
 }
 
 tr:hover {
-    background-color: #f5f5f5;
+    background-color: #f8f9fa;
 }
 
 tr:nth-child(even) {
-    background-color: #fafafa;
+    background-color: #fdfdfd;
 }
 
-/* Tabla de horario específica */
+/* Tabla de horario específica - TEMA CLARO */
 .schedule-table {
     font-size: 0.9em;
 }
 
 .schedule-table th {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
     color: white;
     font-weight: 600;
     text-align: center;
@@ -258,22 +265,22 @@ tr:nth-child(even) {
 }
 
 .schedule-table td:first-child {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, #f8f9fa 0%, #ecf0f1 100%);
     font-weight: 600;
-    color: #667eea;
+    color: #2c3e50;
 }
 
 .schedule-table .subject {
-    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-    color: #1976d2;
+    background: linear-gradient(135deg, #ebf3fd 0%, #d4edda 100%);
+    color: #155724;
     font-weight: 500;
     border-radius: 4px;
     position: relative;
 }
 
 .schedule-table .lab {
-    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
-    color: #f57c00;
+    background: linear-gradient(135deg, #fff2e0 0%, #fce4ec 100%);
+    color: #e91e63;
     font-weight: 500;
     border-radius: 4px;
     position: relative;
@@ -291,20 +298,20 @@ tr:nth-child(even) {
 }
 
 .schedule-table .subject::before {
-    background: #1976d2;
+    background: #27ae60;
 }
 
 .schedule-table .lab::before {
-    background: #f57c00;
+    background: #e91e63;
 }
 
-/* Formularios */
+/* Formularios - TEMA CLARO */
 .form-container {
     background: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ecf0f1;
 }
 
 .form-group {
@@ -315,7 +322,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #555;
+    color: #34495e;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -324,22 +331,23 @@ label {
 input, textarea, select {
     width: 100%;
     padding: 12px;
-    border: 2px solid #ddd;
+    border: 2px solid #bdc3c7;
     border-radius: 6px;
     font-size: 16px;
     transition: all 0.3s ease;
     background: white;
+    color: #2c3e50;
 }
 
 input:focus, textarea:focus, select:focus {
     outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
     transform: translateY(-1px);
 }
 
 .btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
     color: white;
     padding: 12px 30px;
     border: none;
@@ -411,327 +419,190 @@ input:focus, textarea:focus, select:focus {
     transition: width 2s ease;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .container {
-        margin: 15px;
-        padding: 25px;
+/* ===== ANIMACIONES CSS PURAS PARA PÁGINAS DE USUARIO ===== */
+.container {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.member-card.inactive:active {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-    
-    .content-section {
-        padding: 25px;
-    }
-    
-    .profile-photo {
-        width: 180px;
-        height: 180px;
-    }
-    
-    .name {
-        font-size: 2.3em;
-    }
-    
-    .section-title {
-        font-size: 1.6em;
-    }
-    
-    .back-button {
-        position: relative;
-        top: auto;
-        left: auto;
-        margin-bottom: 20px;
-        display: inline-flex;
-    }
-    
-    .switch {
-        top: 15px;
-        right: 15px;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@media (max-width: 768px) {
-    .container {
-        margin: 10px;
-        padding: 20px;
-    }
-    
-    .header {
-        padding: 30px 0;
-        margin-bottom: 30px;
-    }
-    
-    .name {
-        font-size: 2em;
-    }
-    
-    .profile-photo {
-        width: 150px;
-        height: 150px;
-    }
-    
-    .content-section {
-        padding: 20px;
-        margin-bottom: 30px;
-    }
-    
-    .section-title {
-        font-size: 1.5em;
-        margin-bottom: 15px;
-    }
-    
-    .paragraph {
-        font-size: 1em;
-        text-align: left;
-        margin-bottom: 15px;
-    }
-    
-    table {
-        font-size: 14px;
-    }
-    
-    th, td {
-        padding: 10px 8px;
-    }
-    
-    .schedule-table {
-        font-size: 0.8em;
-    }
-    
-    .schedule-table th, .schedule-table td {
-        padding: 8px 4px;
-    }
-    
-    .form-container {
-        padding: 20px;
-    }
-    
-    .form-group {
-        margin-bottom: 15px;
-    }
-    
-    input, textarea, select {
-        padding: 10px;
-        font-size: 14px;
-    }
-    
-    .btn {
-        padding: 10px 25px;
-        font-size: 14px;
-    }
-    
-    .contact-link {
-        padding: 12px 25px;
-        font-size: 14px;
-    }
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
 }
 
-@media (max-width: 480px) {
-    .container {
-        margin: 5px;
-        padding: 15px;
-    }
-    
-    .header {
-        padding: 20px 0;
-        margin-bottom: 25px;
-    }
-    
-    .name {
-        font-size: 1.8em;
-        margin-bottom: 8px;
-    }
-    
-    .profile-photo {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 15px;
-    }
-    
-    .content-section {
-        padding: 15px;
-        margin-bottom: 25px;
-    }
-    
-    .section-title {
-        font-size: 1.3em;
-        margin-bottom: 12px;
-    }
-    
-    .paragraph {
-        font-size: 0.95em;
-        line-height: 1.5;
-    }
-    
-    .schedule-table {
-        font-size: 0.7em;
-        min-width: 400px;
-    }
-    
-    .schedule-table th, .schedule-table td {
-        padding: 6px 2px;
-        font-size: 0.85em;
-    }
-    
-    .content-section:has(.schedule-table) {
-        overflow-x: auto;
-        padding: 10px;
-    }
-    
-    .form-container {
-        padding: 15px;
-    }
-    
-    .btn {
-        width: 100%;
-        padding: 12px;
-        font-size: 14px;
-        margin-top: 10px;
-    }
-    
-    .contact-link {
-        display: block;
-        text-align: center;
-        padding: 12px 20px;
-        font-size: 14px;
-        margin: 15px 0;
-    }
-    
-    .switch {
-        width: 50px;
-        height: 50px;
-        font-size: 1.2em;
-        top: 10px;
-        right: 10px;
-    }
+/* ===== TEMA OSCURO PARA PÁGINAS DE USUARIO - PALETA COMPLETA ===== */
+
+/* Cuerpo principal - TEMA OSCURO */
+body.personal-page:has(#switch:not(:checked)) {
+    background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
+    color: #e8e8e8;
 }
 
-/* ===== TEMA OSCURO PARA PÁGINAS DE USUARIO ===== */
-.dark-theme.personal-page {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    color: #e0e0e0;
-}
-
-.dark-theme .container {
-    background: rgba(30, 30, 50, 0.95);
+/* Contenedor principal - TEMA OSCURO */
+body.personal-page:has(#switch:not(:checked)) .container {
+    background: rgba(18, 18, 18, 0.95);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
-.dark-theme .header {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+/* Header - TEMA OSCURO */
+body.personal-page:has(#switch:not(:checked)) .header {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
 }
 
-.dark-theme .name {
-    color: #64b5f6;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+body.personal-page:has(#switch:not(:checked)) .name {
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-.dark-theme .back-button {
-    background: rgba(40, 40, 60, 0.9);
-    border-color: #64b5f6;
-    color: #64b5f6;
+body.personal-page:has(#switch:not(:checked)) .profile-photo {
+    border-color: #74b9ff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-.dark-theme .back-button:hover {
-    background: #64b5f6;
-    color: #1a1a2e;
+body.personal-page:has(#switch:not(:checked)) .profile-photo:hover {
+    border-color: #ffffff;
 }
 
-
-
-.dark-theme .content-section {
-    background: rgba(40, 40, 60, 0.6);
+/* Botón de vuelta - TEMA OSCURO */
+body.personal-page:has(#switch:not(:checked)) .back-button {
+    background: rgba(28, 28, 28, 0.9);
+    border-color: #74b9ff;
+    color: #74b9ff;
 }
 
-.dark-theme .section-title {
-    color: #64b5f6;
+body.personal-page:has(#switch:not(:checked)) .back-button:hover {
+    background: #74b9ff;
+    color: #0c0c0c;
+    box-shadow: 0 5px 15px rgba(116, 185, 255, 0.3);
 }
 
-.dark-theme .section-title::after {
-    background: linear-gradient(135deg, #64b5f6 0%, #42a5f5 100%);
+/* Secciones de contenido - TEMA OSCURO */
+body.personal-page:has(#switch:not(:checked)) .content-section {
+    background: rgba(28, 28, 28, 0.9);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.dark-theme .paragraph {
-    color: #b0b0b0;
+body.personal-page:has(#switch:not(:checked)) .content-section:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
-.dark-theme table {
-    background: rgba(40, 40, 60, 0.9);
+body.personal-page:has(#switch:not(:checked)) .section-title {
+    color: #ffffff;
 }
 
-.dark-theme th {
-    background: linear-gradient(135deg, #64b5f6 0%, #42a5f5 100%);
-    color: #1a1a2e;
+body.personal-page:has(#switch:not(:checked)) .section-title::after {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
 }
 
-.dark-theme td {
-    color: #e0e0e0;
+body.personal-page:has(#switch:not(:checked)) .paragraph {
+    color: #b8b8b8;
+}
+
+/* Tablas - TEMA OSCURO */
+body.personal-page:has(#switch:not(:checked)) table {
+    background: rgba(28, 28, 28, 0.9);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.personal-page:has(#switch:not(:checked)) th {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    color: #ffffff;
+}
+
+body.personal-page:has(#switch:not(:checked)) td {
+    color: #e8e8e8;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.dark-theme tr:hover {
-    background-color: rgba(100, 181, 246, 0.1);
-}
-
-.dark-theme tr:nth-child(even) {
+body.personal-page:has(#switch:not(:checked)) tr:hover {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-.dark-theme .schedule-table td:first-child {
-    background: linear-gradient(135deg, rgba(50, 50, 70, 0.8) 0%, rgba(60, 60, 80, 0.8) 100%);
-    color: #64b5f6;
+body.personal-page:has(#switch:not(:checked)) tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
 }
 
-.dark-theme .schedule-table .subject {
-    background: linear-gradient(135deg, rgba(33, 150, 243, 0.2) 0%, rgba(33, 150, 243, 0.3) 100%);
-    color: #64b5f6;
+/* Horarios - TEMA OSCURO */
+body.personal-page:has(#switch:not(:checked)) .schedule-table td:first-child {
+    background: linear-gradient(135deg, rgba(35, 35, 35, 0.9) 0%, rgba(45, 45, 45, 0.9) 100%);
+    color: #74b9ff;
 }
 
-.dark-theme .schedule-table .lab {
-    background: linear-gradient(135deg, rgba(255, 152, 0, 0.2) 0%, rgba(255, 152, 0, 0.3) 100%);
-    color: #ffb74d;
+body.personal-page:has(#switch:not(:checked)) .schedule-table .subject {
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.2) 0%, rgba(46, 204, 113, 0.3) 100%);
+    color: #2ecc71;
 }
 
-.dark-theme .form-container {
-    background: rgba(40, 40, 60, 0.9);
+body.personal-page:has(#switch:not(:checked)) .schedule-table .subject::before {
+    background: #2ecc71;
+}
+
+body.personal-page:has(#switch:not(:checked)) .schedule-table .lab {
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.2) 0%, rgba(231, 76, 60, 0.3) 100%);
+    color: #e74c3c;
+}
+
+body.personal-page:has(#switch:not(:checked)) .schedule-table .lab::before {
+    background: #e74c3c;
+}
+
+/* Formularios - TEMA OSCURO */
+body.personal-page:has(#switch:not(:checked)) .form-container {
+    background: rgba(28, 28, 28, 0.9);
     border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.dark-theme label {
-    color: #b0b0b0;
+body.personal-page:has(#switch:not(:checked)) label {
+    color: #b8b8b8;
 }
 
-.dark-theme input, .dark-theme textarea, .dark-theme select {
-    background: rgba(50, 50, 70, 0.8);
+body.personal-page:has(#switch:not(:checked)) input, 
+body.personal-page:has(#switch:not(:checked)) textarea, 
+body.personal-page:has(#switch:not(:checked)) select {
+    background: rgba(35, 35, 35, 0.9);
     border-color: rgba(255, 255, 255, 0.2);
-    color: #e0e0e0;
+    color: #e8e8e8;
 }
 
-.dark-theme input:focus, .dark-theme textarea:focus, .dark-theme select:focus {
-    border-color: #64b5f6;
-    box-shadow: 0 0 0 3px rgba(100, 181, 246, 0.1);
+body.personal-page:has(#switch:not(:checked)) input:focus, 
+body.personal-page:has(#switch:not(:checked)) textarea:focus, 
+body.personal-page:has(#switch:not(:checked)) select:focus {
+    border-color: #74b9ff;
+    box-shadow: 0 0 0 3px rgba(116, 185, 255, 0.1);
 }
 
-.dark-theme .btn {
-    background: linear-gradient(135deg, #64b5f6 0%, #42a5f5 100%);
-    color: #1a1a2e;
+body.personal-page:has(#switch:not(:checked)) .btn {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    color: #ffffff;
 }
 
-.dark-theme .btn:hover {
-    box-shadow: 0 10px 25px rgba(100, 181, 246, 0.3);
+body.personal-page:has(#switch:not(:checked)) .btn:hover {
+    box-shadow: 0 10px 25px rgba(116, 185, 255, 0.3);
 }
 
-.dark-theme .contact-link {
-    background: linear-gradient(135deg, #d32f2f 0%, #c62828 100%);
+body.personal-page:has(#switch:not(:checked)) .contact-link {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
 }
 
-.dark-theme .contact-link:hover {
-    box-shadow: 0 10px 25px rgba(211, 47, 47, 0.3);
-}
-
-.dark-theme .skill-bar {
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.dark-theme .skill-progress {
-    background: linear-gradient(135deg, #64b5f6 0%, #42a5f5 100%);
+body.personal-page:has(#switch:not(:checked)) .contact-link:hover {
+    box-shadow: 0 10px 25px rgba(231, 76, 60, 0.3);
 }

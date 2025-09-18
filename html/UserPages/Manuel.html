@@ -15,7 +15,7 @@
     
     <!-- Toggle de cambio de tema -->
     <label for="switch" class="switch">
-        <input id="switch" type="checkbox" />
+        <input id="switch" type="checkbox" checked />
         <span class="slider"></span>
         <span class="decoration"></span>
     </label>
@@ -242,51 +242,6 @@
         </section>
     </div>
 
-    <script>
-        // Funcionalidad del cambio de tema
-        const themeToggle = document.getElementById('switch');
-        const body = document.body;
-        
-        // Verificar tema guardado en localStorage
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            body.classList.add('dark-theme');
-            themeToggle.checked = false;
-        } else {
-            themeToggle.checked = true;
-        }
-        
-        themeToggle.addEventListener('change', function() {
-            if (themeToggle.checked) {
-                // Checked = tema claro
-                body.classList.remove('dark-theme');
-                localStorage.setItem('theme', 'light');
-            } else {
-                // Unchecked = tema oscuro
-                body.classList.add('dark-theme');
-                localStorage.setItem('theme', 'dark');
-            }
-        });
-
-        // Pequeña animación para cuando se carga la página
-        document.addEventListener('DOMContentLoaded', function() {
-            const container = document.querySelector('.container');
-            container.style.opacity = '0';
-            container.style.transform = 'translateY(20px)';
-            
-            setTimeout(() => {
-                container.style.transition = 'all 0.6s ease';
-                container.style.opacity = '1';
-                container.style.transform = 'translateY(0)';
-            }, 100);
-            
-            // Validación del formulario
-            const form = document.querySelector('form');
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('¡Gracias por tu mensaje! Te contactaré pronto.');
-            });
-        });
-    </script>
+    <!-- Conversión completada a CSS puro - Sin JavaScript requerido -->
 </body>
 </html>
