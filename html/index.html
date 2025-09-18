@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo DISI - Páginas Personales</title>
+    <title>Grupo DISI - Página Principal</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <!-- Botón de cambio de tema -->
-    <button class="theme-toggle" id="themeToggle" title="Cambiar tema">🌙</button>
+    <!-- Toggle de cambio de tema -->
+    <label for="switch" class="switch">
+        <input id="switch" type="checkbox" />
+        <span class="slider"></span>
+        <span class="decoration"></span>
+    </label>
     
     <div class="main-container">
         <header class="header">
             <h1 class="main-title">Páginas Personales</h1>
             <p class="subtitle">Grupo de Trabajo - DISI</p>
-            <p class="course-info">Curso 3º, Semestre 1º • Grados en Ingeniería Informática • 2025-2026</p>
+            <p class="course-info">Curso 3º, Semestre 1º • Grados en Ingeniería Informática en Ingeniería de Computadores• 2025-2026</p>
         </header>
 
         <main>
@@ -22,12 +26,12 @@
                 <!-- Miembro 1 - Manuel (Activo) -->
                 <a href="UserPages/Manuel.html" class="member-card active">
                     <img src="https://preview.redd.it/5r0vb9vesxea1.png?auto=webp&s=a8b0977fffa07d699f5d152f9b529f54e4165979" 
-                         alt="Manuel Piris Martínez" class="member-photo">
+                         alt="Foto de Perfil de Manuel Piris Martínez" class="member-photo">
                     <h3 class="member-name">Manuel Piris Martínez</h3>
                     <p class="member-role">Estudiante DISI</p>
                     <p class="member-description">
-                        Apasionado por el desarrollo web y las nuevas tecnologías. 
-                        Especializado en frontend y diseño de interfaces.
+                        Estudiante de Ingeniería Informática,
+                        apasionado del mundo del motor.
                     </p>
                 </a>
 
@@ -78,35 +82,34 @@
         </main>
 
         <footer class="footer">
-            <p><strong>Proyecto Académico</strong> | Departamento de Ingeniería en Sistemas de Información</p>
+            <p><strong>Proyecto Académico</strong> | Diseño e Interacción de Sistemas de Información</p>
             <p>Universidad • Semestre 5 • Año 2025-2026</p>
         </footer>
     </div>
 
     <script>
         // Funcionalidad del cambio de tema
-        const themeToggle = document.getElementById('themeToggle');
+        const themeToggle = document.getElementById('switch');
         const body = document.body;
         
         // Verificar tema guardado en localStorage
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'dark') {
             body.classList.add('dark-theme');
-            themeToggle.textContent = '☀️';
-            themeToggle.title = 'Cambiar a tema claro';
+            themeToggle.checked = false; 
+        } else {
+            themeToggle.checked = true; 
         }
         
-        themeToggle.addEventListener('click', function() {
-            body.classList.toggle('dark-theme');
-            
-            if (body.classList.contains('dark-theme')) {
-                themeToggle.textContent = '☀️';
-                themeToggle.title = 'Cambiar a tema claro';
-                localStorage.setItem('theme', 'dark');
-            } else {
-                themeToggle.textContent = '🌙';
-                themeToggle.title = 'Cambiar a tema oscuro';
+        themeToggle.addEventListener('change', function() {
+            if (themeToggle.checked) {
+                // Checked = tema claro
+                body.classList.remove('dark-theme');
                 localStorage.setItem('theme', 'light');
+            } else {
+                // Unchecked = tema oscuro
+                body.classList.add('dark-theme');
+                localStorage.setItem('theme', 'dark');
             }
         });
 

@@ -79,26 +79,86 @@ body.personal-page {
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
 }
 
-/* Botón de cambio de tema para páginas de usuario */
-.theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border: none;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    font-size: 1.5em;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    z-index: 1000;
+/* Botón de cambio de tema para páginas de usuario - Toggle simple y elegante */
+/* From Uiverse.io by juanpabl0svn */ 
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  cursor: pointer;
 }
 
-.theme-toggle:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #20262c;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: 0.5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #ececd9, -4px 1px 4px 0px #dadada;
+  background: var(--background);
+  transition: 0.5s;
+}
+
+.decoration {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  right: 20%;
+  top: 15%;
+  background: #e5f041e6;
+  backdrop-filter: blur(10px);
+  transition: all 0.5s;
+  box-shadow: -7px 10px 0 #e5f041e6, 8px 15px 0 #e5f041e6, -17px 1px 0 #e5f041e6,
+    -20px 10px 0 #e5f041e6, -7px 23px 0 #e5f041e6, -15px 25px 0 #e5f041e6;
+}
+
+input:checked ~ .decoration {
+  transform: translateX(-20px);
+  width: 10px;
+  height: 10px;
+  background: white;
+  box-shadow: -12px 0 0 white, -6px 0 0 1.6px white, 5px 15px 0 1px white,
+    1px 17px 0 white, 10px 17px 0 white;
+}
+
+input:checked + .slider {
+  background-color: #5494de;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #efdf2b, 0 0 10px 0px #efdf2b;
 }
 
 /* Secciones de contenido */
@@ -383,7 +443,7 @@ input:focus, textarea:focus, select:focus {
         display: inline-flex;
     }
     
-    .theme-toggle {
+    .switch {
         top: 15px;
         right: 15px;
     }
@@ -536,7 +596,7 @@ input:focus, textarea:focus, select:focus {
         margin: 15px 0;
     }
     
-    .theme-toggle {
+    .switch {
         width: 50px;
         height: 50px;
         font-size: 1.2em;
@@ -576,11 +636,7 @@ input:focus, textarea:focus, select:focus {
     color: #1a1a2e;
 }
 
-.dark-theme .theme-toggle {
-    background: rgba(40, 40, 60, 0.9);
-    color: #e0e0e0;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
+
 
 .dark-theme .content-section {
     background: rgba(40, 40, 60, 0.6);
