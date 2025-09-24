@@ -145,25 +145,72 @@
             </ul>
         </section>
 
-        <!-- Formulario -->
+        <!-- Habilidades Técnicas -->
         <section class="content-section">
+            <h2 class="section-title">Mis Habilidades Técnicas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Nivel</th>
+                        <th>Experiencia</th>
+                        <th>Proyectos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML/CSS</td>
+                        <td>Avanzado</td>
+                        <td>2 años</td>
+                        <td>15+</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Intermedio</td>
+                        <td>1.5 años</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermedio</td>
+                        <td>1 año</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>Intermedio</td>
+                        <td>1 año</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>Principiante</td>
+                        <td>6 meses</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Formulario de contacto -->
+                <section class="content-section">
             <h2 class="section-title">Formulario de Contacto</h2>
             <div class="form-container">
                 <form action="#" method="POST">
                     <div class="form-group">
                         <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" required tabindex="3">
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required tabindex="4">
+                        <input type="email" id="email" name="email" placeholder="Escribe tu email aquí" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="asunto">Asunto:</label>
-                        <select id="asunto" name="asunto" required tabindex="5">
-                            <option value="">Selecciona un asunto</option>
+                        <select id="asunto" name="asunto" required>
+                            <option value="" disabled selected>Selecciona un asunto</option>
                             <option value="colaboracion">Propuesta de colaboración</option>
                             <option value="consulta">Consulta general</option>
                             <option value="proyecto">Proyecto conjunto</option>
@@ -171,6 +218,7 @@
                         </select>
                     </div>
                     
+
                     <div class="form-group">
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required tabindex="6"></textarea>
