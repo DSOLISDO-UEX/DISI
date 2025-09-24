@@ -9,13 +9,13 @@
 </head>
 <body class="personal-page">
     <!-- Botón de vuelta atrás -->
-    <a href="../index.html" class="back-button">
+    <a href="../index.html" class="back-button" tabindex="1" aria-label="Volver a la página principal">
         ← Volver al inicio
     </a>
     
     <!-- Toggle de cambio de tema -->
     <label for="switch" class="switch">
-        <input id="switch" type="checkbox" checked />
+        <input id="switch" type="checkbox" checked tabindex="2" aria-label="Cambiar entre tema claro y oscuro" />
         <span class="slider"></span>
         <span class="decoration"></span>
     </label>
@@ -25,7 +25,7 @@
         <header class="header">
             <img src="https://preview.redd.it/5r0vb9vesxea1.png?auto=webp&s=a8b0977fffa07d699f5d152f9b529f54e4165979" alt="Mi foto" class="profile-photo">
             <h1 class="name">Manuel Piris Martínez</h1>
-            <p style="font-size: 1.2em; color: #666;">Estudiante DISI</p>
+            <p class="student-info">Estudiante DISI</p>
         </header>
 
         <!-- Tabla de Horario -->
@@ -45,90 +45,83 @@
                 <tbody>
                     <tr>
                         <td><strong>8:30</strong></td>
-                        <td></td>
-                        <td></td>
+                        <td class="free">Libre</td>
+                        <td class="subject">IS</td>
                         <td class="subject">ALI</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><strong>9:00</strong></td>
-                        <td></td>
-                        <td></td>
-                        <td class="subject">ALI</td>
-                        <td></td>
+                        <td class="subject">IS</td>
                         <td class="subject">ALI</td>
                     </tr>
                     <tr>
                         <td><strong>10:00</strong></td>
-                        <td></td>
-                        <td class="lab">Lab IS</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><strong>10:30</strong></td>
-                        <td></td>
-                        <td class="lab">Lab IS</td>
+                        <td class="free">Libre</td>
+                        <td class="subject">RO</td>
                         <td class="subject">DISI</td>
-                        <td></td>
+                        <td class="subject">DISI</td>
                         <td class="subject">RO</td>
                     </tr>
                     <tr>
                         <td><strong>11:30</strong></td>
-                        <td class="subject">IS</td>
-                        <td class="lab">Lab L2/L1</td>
-                        <td class="lab">Lab L3/L1</td>
-                        <td class="lab">Lab L5/L315</td>
-                        <td class="lab">Lab L5</td>
-                    </tr>
-                    <tr>
-                        <td><strong>12:00</strong></td>
-                        <td class="subject">IS</td>
-                        <td class="lab">Lab L2/L2</td>
-                        <td class="lab">Lab L4/L2</td>
-                        <td class="lab">Lab L6/L416</td>
-                        <td class="lab">Lab L6</td>
+                        <td class="lab">Lab RO</td>
+                        <td class="subject">SO</td>
+                        <td class="lab">Lab IS</td>
+                        <td class="lab">Lab SO</td>
+                        <td class="free">Libre</td>
                     </tr>
                     <tr>
                         <td><strong>13:00</strong></td>
-                        <td class="subject">IC</td>
-                        <td class="lab">Lab L2</td>
-                        <td class="lab">Lab L4</td>
-                        <td class="lab">Lab L6</td>
-                        <td class="lab">Lab L6</td>
+                        <td class="subject">SO</td>
+                        <td class="lab">Lab ALI</td>
+                        <td class="lab">Lab DISI</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
                     </tr>
                     <tr>
-                        <td><strong>13:30</strong></td>
-                        <td class="subject">IC</td>
-                        <td class="lab">Lab L2</td>
-                        <td class="lab">Lab L4</td>
-                        <td class="lab">Lab L6</td>
-                        <td class="lab">Lab L6</td>
+                        <td><strong>14:30</strong></td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
                     </tr>
                     <tr>
                         <td><strong>15:30</strong></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="lab">Lab L1</td>
-                        <td class="lab">Lab L3</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
                     </tr>
                     <tr>
-                        <td><strong>16:30</strong></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td class="lab">Lab L2</td>
-                        <td class="lab">Lab L4</td>
+                        <td><strong>17:00</strong></td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                    </tr>
+                    <tr>
+                        <td><strong>18:30</strong></td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                    </tr>
+                    <tr>
+                        <td><strong>20:00</strong></td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
                     </tr>
                 </tbody>
             </table>
-            <div style="margin-top: 15px; font-size: 0.9em; color: #666;">
+            <div class="schedule-legend">
                 <strong>Leyenda:</strong> 
-                <span style="color: #1976d2;">■</span> Clases teóricas &nbsp;&nbsp;
-                <span style="color: #f57c00;">■</span> Laboratorios
+                <span class="legend-subject">■</span> Clases teóricas &nbsp;&nbsp;
+                <span class="legend-lab">■</span> Laboratorios &nbsp;&nbsp;
+                <span class="legend-free">■</span> Tiempo libre
             </div>
         </section>
 
@@ -136,58 +129,20 @@
         <section class="content-section">
             <h2 class="section-title">Acerca de Mí</h2>
             <p class="paragraph">
-                ¡Hola! Soy Manuel Piris Martínez [...]
+                ¡Hola! Soy Manuel Piris Martínez,
             </p>
             <p class="paragraph">
-                [...]
+                Actualmente me encuentro estudiando la carrera de Ingeniería Informática en Ingeniería de Computadores en la UEx.
             </p>
-        </section>
-
-        <!-- Habilidades Técnicas -->
-        <section class="content-section">
-            <h2 class="section-title">Mis Habilidades Técnicas</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tecnología</th>
-                        <th>Nivel</th>
-                        <th>Experiencia</th>
-                        <th>Proyectos</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML/CSS</td>
-                        <td>Avanzado</td>
-                        <td>2 años</td>
-                        <td>15+</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Intermedio</td>
-                        <td>1.5 años</td>
-                        <td>8</td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>Intermedio</td>
-                        <td>1 año</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>SQL</td>
-                        <td>Intermedio</td>
-                        <td>1 año</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>React</td>
-                        <td>Principiante</td>
-                        <td>6 meses</td>
-                        <td>2</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p class="paragraph">
+                Mis principales aficiones incluyen:
+            </p>
+            <ul class="interests-list">
+                <li>La música - Escucho diversos géneros durante prácticamente todo el día</li>
+                <li>Los coches - Me fascina la mecánica y el deporte del motor</li>
+                <li>La informática - Me gusta programar e investigar sobre las nuevas tecnologías</li>
+                <li>Los videojuegos - Especialmente juegos de estrategia y motor</li>
+            </ul>
         </section>
 
         <!-- Formulario de contacto -->
@@ -219,10 +174,10 @@
 
                     <div class="form-group">
                         <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required tabindex="6"></textarea>
                     </div>
                     
-                    <button type="submit" class="btn">Enviar Mensaje</button>
+                    <button type="submit" class="btn" tabindex="7">Enviar Mensaje</button>
                 </form>
             </div>
         </section>
@@ -230,14 +185,14 @@
         <!-- Enlace de contacto Gmail -->
         <section class="content-section contact-section">
             <h2 class="section-title">Contacto Directo</h2>
-            <p style="margin-bottom: 20px; font-size: 1.1em;">
+            <p class="contact-intro">
                 ¿Prefieres contactarme directamente? Puedes enviarme un email haciendo clic en el siguiente enlace:
             </p>
             <a href="mailto:correo@gmail.com?subject=Contacto desde mi página web&body=Hola Manuel,%0D%0A%0D%0AMe gustaría contactarte..." 
-               class="contact-link">
+               class="contact-link" tabindex="8" aria-label="Enviar email directo a Manuel">
                 📧 Contactar por Gmail
             </a>
-            <p style="margin-top: 15px; color: #666;">
+            <p class="email-info">
                 correo
             </p>
         </section>

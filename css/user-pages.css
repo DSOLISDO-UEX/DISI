@@ -271,23 +271,33 @@ tr:nth-child(even) {
 }
 
 .schedule-table .subject {
-    background: linear-gradient(135deg, #ebf3fd 0%, #d4edda 100%);
-    color: #155724;
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    color: #e65100;
     font-weight: 500;
     border-radius: 4px;
     position: relative;
 }
 
 .schedule-table .lab {
-    background: linear-gradient(135deg, #fff2e0 0%, #fce4ec 100%);
-    color: #e91e63;
-    font-weight: 500;
+    background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+    color: #ffffff;
+    font-weight: 600;
     border-radius: 4px;
     position: relative;
 }
 
+.schedule-table .free {
+    background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c8 100%);
+    color: #2e7d32;
+    font-weight: 500;
+    border-radius: 4px;
+    position: relative;
+    font-style: italic;
+}
+
 .schedule-table .subject::before,
-.schedule-table .lab::before {
+.schedule-table .lab::before,
+.schedule-table .free::before {
     content: '';
     position: absolute;
     top: 0;
@@ -298,11 +308,60 @@ tr:nth-child(even) {
 }
 
 .schedule-table .subject::before {
-    background: #27ae60;
+    background: #e65100;
 }
 
 .schedule-table .lab::before {
-    background: #e91e63;
+    background: #ef6c00;
+}
+
+.schedule-table .free::before {
+    background: #2e7d32;
+}
+
+/* Elementos específicos sin estilos inline - TEMA CLARO */
+.student-info {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.contact-intro {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.email-info {
+    margin-top: 15px;
+    color: #666;
+}
+
+.schedule-legend {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.legend-subject {
+    color: #e65100;
+}
+
+.legend-lab {
+    color: #ef6c00;
+}
+
+.legend-free {
+    color: #2e7d32;
+}
+
+.interests-list {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.interests-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #2c3e50;
 }
 
 /* Formularios - TEMA CLARO */
@@ -547,21 +606,63 @@ body.personal-page:has(#switch:not(:checked)) .schedule-table td:first-child {
 }
 
 body.personal-page:has(#switch:not(:checked)) .schedule-table .subject {
-    background: linear-gradient(135deg, rgba(46, 204, 113, 0.2) 0%, rgba(46, 204, 113, 0.3) 100%);
-    color: #2ecc71;
+    background: linear-gradient(135deg, rgba(230, 81, 0, 0.3) 0%, rgba(230, 81, 0, 0.4) 100%);
+    color: #ffab40;
 }
 
 body.personal-page:has(#switch:not(:checked)) .schedule-table .subject::before {
-    background: #2ecc71;
+    background: #ffab40;
 }
 
 body.personal-page:has(#switch:not(:checked)) .schedule-table .lab {
-    background: linear-gradient(135deg, rgba(231, 76, 60, 0.2) 0%, rgba(231, 76, 60, 0.3) 100%);
-    color: #e74c3c;
+    background: linear-gradient(135deg, rgba(255, 152, 0, 0.6) 0%, rgba(255, 152, 0, 0.8) 100%);
+    color: #ffb74d;
 }
 
 body.personal-page:has(#switch:not(:checked)) .schedule-table .lab::before {
-    background: #e74c3c;
+    background: #ffb74d;
+}
+
+body.personal-page:has(#switch:not(:checked)) .schedule-table .free {
+    background: linear-gradient(135deg, rgba(46, 125, 50, 0.3) 0%, rgba(46, 125, 50, 0.4) 100%);
+    color: #81c784;
+}
+
+body.personal-page:has(#switch:not(:checked)) .schedule-table .free::before {
+    background: #81c784;
+}
+
+/* Elementos específicos sin estilos inline - TEMA OSCURO */
+body.personal-page:has(#switch:not(:checked)) .student-info {
+    color: #b8b8b8;
+}
+
+body.personal-page:has(#switch:not(:checked)) .contact-intro {
+    color: #e8e8e8;
+}
+
+body.personal-page:has(#switch:not(:checked)) .email-info {
+    color: #b8b8b8;
+}
+
+body.personal-page:has(#switch:not(:checked)) .schedule-legend {
+    color: #b8b8b8;
+}
+
+body.personal-page:has(#switch:not(:checked)) .legend-subject {
+    color: #ffab40;
+}
+
+body.personal-page:has(#switch:not(:checked)) .legend-lab {
+    color: #ffb74d;
+}
+
+body.personal-page:has(#switch:not(:checked)) .legend-free {
+    color: #81c784;
+}
+
+body.personal-page:has(#switch:not(:checked)) .interests-list li {
+    color: #e8e8e8;
 }
 
 /* Formularios - TEMA OSCURO */
