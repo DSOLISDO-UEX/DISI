@@ -8,7 +8,7 @@ body.personal-page {
     align-items: flex-start;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     min-height: 100vh;
-    color: #2c3e50;
+    color: #000000;
 }
 
 /* Contenedor para página personal - TEMA CLARO */
@@ -51,7 +51,7 @@ body.personal-page {
 
 .name {
     font-size: 2.5em;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 10px;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -183,7 +183,7 @@ input:checked + .slider:before {
 
 .section-title {
     font-size: 1.8em;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 20px;
     text-align: center;
     font-weight: 600;
@@ -206,7 +206,7 @@ input:checked + .slider:before {
     font-size: 1.1em;
     text-align: justify;
     margin-bottom: 20px;
-    color: #34495e;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -381,7 +381,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #34495e;
+    color: #000000;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -395,7 +395,7 @@ input, textarea, select {
     font-size: 16px;
     transition: all 0.3s ease;
     background: white;
-    color: #2c3e50;
+    color: #000000;
 }
 
 input:focus, textarea:focus, select:focus {
