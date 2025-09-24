@@ -9,91 +9,93 @@
 </head>
 <body class="personal-page">
     <!-- Botón de vuelta atrás -->
-    <a href="../index.html" class="back-button">
+    <a href="../index.html" class="back-button" accesskey="v" aria-label="Volver al inicio">
         ← Volver al inicio
     </a>
     
     <!-- Toggle de cambio de tema -->
-    <label for="switch" class="switch">
-        <input id="switch" type="checkbox" checked />
+    <label for="switch" class="switch" tabindex="0" aria-label="Cambiar tema">
+        <input id="switch" type="checkbox" checked aria-checked="true" />
         <span class="slider"></span>
         <span class="decoration"></span>
     </label>
     
-    <div class="container">
+    <div class="container" tabindex="0" aria-label="Contenido principal">
         <!-- Header con nombre y foto -->
-        <header class="header">
-            <img src="../../images/marcos.png" alt="Mi foto" class="profile-photo">
-            <h1 class="name">Marcos Cabrera Antolin</h1>
-            <p style="font-size: 1.2em; color: #666;">Estudiante DISI</p>s
+        <header class="header" tabindex="0" aria-labelledby="nombre-marcos">
+            <img src="../../images/marcos.png" alt="Foto de Marcos Cabrera Antolin" class="profile-photo">
+            <h1 class="name" id="nombre-marcos">Marcos Cabrera Antolin</h1>
+            <p style="font-size: 1.2em; color: #666;">Estudiante DISI</p>
         </header>
 
         <!-- Información básica -->
-        <section class="content-section">
-            <h2 class="section-title">Acerca de Mí</h2>
+        <section class="content-section" tabindex="0" aria-labelledby="acerca-de-mi">
+            <h2 class="section-title" id="acerca-de-mi">Acerca de Mí</h2>
             <p class="paragraph">
                 ¡Hola! Soy Marcos Cabrera Antolin, estudiante del Grado en Ingeniería Informática en Ingeniería de Computadores en la Universidad de Extremadura. 
-                Actualmente cursando el tercer año, me fascina el desarrollo de software y las nuevas tecnologías.
+                Actualmente cursando el tercer año, me fascina el desarrollo de robotica y las nuevas tecnologías.
             </p>
             <p class="paragraph">
-                Estoy especializado en el diseño y aplicacion y disfruto trabajando en proyectos que combinen 
-                creatividad y lógica para resolver problemas complejos.
+                Actualmente estoy en proceso de formación y aprendizaje en diferentes áreas de la informática. Me interesa especialmente seguir desarrollando 
+                mis conocimientos en programación, robotica y inteligencia artificial. Me considero una persona con muchas ganas de aprender, con motivación para
+                mejorar cada día y abierta a afrontar nuevos retos académicos y profesionales.
             </p>
         </section>
 
         <!-- Habilidades Técnicas -->
-        <section class="content-section">
-            <h2 class="section-title">Mis Habilidades Técnicas</h2>
-            <table>
+        <section class="content-section" tabindex="0" aria-labelledby="habilidades-tecnicas">
+            <h2 class="section-title" id="habilidades-tecnicas">Mis Habilidades Técnicas</h2>
+            <table role="table" aria-label="Tabla de habilidades técnicas">
                 <thead>
                     <tr>
-                        <th>Tecnología</th>
-                        <th>Nivel</th>
-                        <th>Experiencia</th>
-                        <th>Proyectos</th>
+                        <th scope="col">Tecnología</th>
+                        <th scope="col">Nivel</th>
+                        <th scope="col">Experiencia</th>
+                        <th scope="col">Proyectos</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
+                        <td>C/C++</td>
+                        <td>Avazando</td>
+                        <td>3 años</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
                         <td>Java</td>
-                        <td>Avanzado</td>
-                        <td>2.5 años</td>
-                        <td>10+</td>
+                        <td>Intermedio</td>
+                        <td>2 años</td>
+                        <td>3</td>
                     </tr>
                     <tr>
                         <td>Python</td>
-                        <td>Intermedio</td>
-                        <td>1.5 años</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td>C++</td>
-                        <td>Intermedio</td>
+                        <td>Principiante</td>
                         <td>1 año</td>
-                        <td>4</td>
+                        <td>1</td>
                     </tr>
                     <tr>
                         <td>MySQL</td>
-                        <td>Intermedio</td>
-                        <td>1 año</td>
-                        <td>5</td>
+                        <td>Principiante</td>
+                        <td>4 meses</td>
+                        <td>0</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
         <!-- Tabla de Horario -->
-        <section class="content-section">
-            <h2 class="section-title">Mi Horario de Clases</h2>
-            <table class="schedule-table">
+        <section class="content-section" tabindex="0" aria-labelledby="horario-clases">
+            <h2 class="section-title" id="horario-clases">Mi Horario de Clases</h2>
+            <table class="schedule-table" role="table" aria-label="Horario de clases">
+                
                 <thead>
                     <tr>
-                        <th>Hora</th>
-                        <th>Lunes</th>
-                        <th>Martes</th>
-                        <th>Miércoles</th>
-                        <th>Jueves</th>
-                        <th>Viernes</th>
+                        <th scope="col">Hora</th>
+                        <th scope="col">Lunes</th>
+                        <th scope="col">Martes</th>
+                        <th scope="col">Miércoles</th>
+                        <th scope="col">Jueves</th>
+                        <th scope="col">Viernes</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -129,9 +131,45 @@
                         <td></td>
                         <td></td>
                     </tr>
+
+                    <tr>
+                        <td><strong>14:30</strong></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>17:30</strong></td>
+                        <td></td>s
+                        <td class="subject">EE</td>
+                        <td></td>
+                        <td class="subject">EE</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>18:30</strong></td>
+                        <td class="subject">EE</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>19:30</strong></td>
+                        <td class="lab">Seminario EE</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
-            <div style="margin-top: 15px; font-size: 0.9em; color: #666;">
+            <div style="margin-top: 15px; font-size: 0.9em; color: #666;" tabindex="0">
                 <strong>Leyenda:</strong> 
                 <span style="color: #1976d2;">■</span> Clases teóricas &nbsp;&nbsp;
                 <span style="color: #f57c00;">■</span> Laboratorios
@@ -139,38 +177,43 @@
         </section>
 
         <!-- Formulario de contacto -->
-        <section class="content-section">
-            <h2 class="section-title">Formulario de Contacto</h2>
+        <section class="content-section" tabindex="0" aria-labelledby="formulario-contacto">
+            <h2 class="section-title" id="formulario-contacto">Formulario de Contacto</h2>
             <div class="form-container">
-                <form action="#" method="POST">
+                <form action="#" method="POST" aria-labelledby="formulario-contacto">
                     <div class="form-group">
                         <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre y apellidos.">
+                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre y apellidos." tabindex="0" aria-required="true">
                     </div>
 
                     <div class="form-group">
                         <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required placeholder="XXXX@alumnos.unex.es">
+                        <input type="email" id="email" name="email" required placeholder="XXXX@alumnos.unex.es" tabindex="0" aria-required="true">
                     </div>
                     
                     <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required placeholder="Escribe el asunto..." tabindex="0" aria-required="true">
+                    </div>
+
+                    <div class="form-group">
                         <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required tabindex="0" aria-required="true"></textarea>
                     </div>
                     
-                    <button type="submit" class="btn">Enviar Mensaje</button>
+                    <button type="submit" class="btn" accesskey="e" tabindex="0" aria-label="Enviar Mensaje">Enviar Mensaje</button>
                 </form>
             </div>
         </section>
 
         <!-- Contacto directo -->
-        <section class="content-section contact-section">
-            <h2 class="section-title">Contacto Directo</h2>
+        <section class="content-section contact-section" tabindex="0" aria-labelledby="contacto-directo">
+            <h2 class="section-title" id="contacto-directo">Contacto Directo</h2>
             <p style="margin-bottom: 20px; font-size: 1.1em;">
                 ¿Prefieres contactarme directamente? Puedes enviarme un email:
             </p>
-            <a href="mailto:marcos@ejemplo.com?subject=Contacto desde tu página web" 
-               class="contact-link">
+            <a href="mailto:mcabrerai@alumnos.unex.es?subject=Contacto desde tu página web" 
+               class="contact-link" tabindex="0" aria-label="Contactar por Email">
                 📧 Contactar por Email
             </a>
         </section>
