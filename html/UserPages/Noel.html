@@ -34,7 +34,9 @@
         <section class="content-section">
             <h2 class="section-title" tabindex="0">Acerca de Mí</h2>
             <p class="paragraph" tabindex="0">
-                ¡Hola! Soy Noel León Llorente, estudiante del Grado en Ingeniería Informática en la Universidad de Extremadura. 
+                ¡Hola! Soy Noel León Llorente, estudiante del Grado en Ingeniería Informática en la 
+                <a href="https://www.unex.es" id="unex-link" target="_blank" style="color:#1976d2; text-decoration:underline;">Universidad de Extremadura</a>.
+                <span id="unex-visited" style="margin-left:10px; color:green; font-weight:bold; display:none;">Enlace visitado</span>
                 Me encuentro en el tercer año de carrera y tengo gran interés por las tecnologías emergentes.
             </p>
             <p class="paragraph" tabindex="0">
@@ -198,5 +200,17 @@
             </a>
         </section>
     </div>
+<script>
+    // Script para mostrar constancia de visita al enlace
+    const unexLink = document.getElementById('unex-link');
+    const unexVisited = document.getElementById('unex-visited');
+    if (localStorage.getItem('unexVisited')) {
+        unexVisited.style.display = 'inline';
+    }
+    unexLink.addEventListener('click', function() {
+        localStorage.setItem('unexVisited', 'true');
+        unexVisited.style.display = 'inline';
+    });
+</script>
 </body>
 </html>
