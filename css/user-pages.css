@@ -1,3 +1,12 @@
+/* Enlace Universidad de Extremadura: azul normal, violeta si visitado */
+.unex-link:link {
+    color: #1976d2;
+    text-decoration: underline;
+}
+.unex-link:visited {
+    color: #8e24aa;
+    text-decoration: underline;
+}
 /* ===== ESTILOS ESPECÍFICOS PARA PÁGINAS DE USUARIO - TEMA CLARO ===== */
 
 /* Ajuste del body para página personal - TEMA CLARO */
