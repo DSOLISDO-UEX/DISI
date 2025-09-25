@@ -8,7 +8,7 @@ body.personal-page {
     align-items: flex-start;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     min-height: 100vh;
-    color: #2c3e50;
+    color: #000000;
 }
 
 /* Contenedor para página personal - TEMA CLARO */
@@ -52,7 +52,7 @@ body.personal-page {
 
 .name {
     font-size: 2.5em;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 10px;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -185,7 +185,7 @@ input:checked + .slider:before {
 
 .section-title {
     font-size: 1.8em;
-    color: #2c3e50;
+    color: #000000;
     margin-bottom: 20px;
     text-align: left;
     font-weight: 600;
@@ -208,7 +208,7 @@ input:checked + .slider:before {
     font-size: 1.1em;
     text-align: justify;
     margin-bottom: 20px;
-    color: #34495e;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -383,7 +383,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #34495e;
+    color: #000000;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -397,7 +397,7 @@ input, textarea, select {
     font-size: 16px;
     transition: all 0.3s ease;
     background: white;
-    color: #2c3e50;
+    color: #000000;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -708,4 +708,241 @@ body.personal-page:has(#switch:not(:checked)) .contact-link {
 
 body.personal-page:has(#switch:not(:checked)) .contact-link:hover {
     box-shadow: 0 10px 25px rgba(231, 76, 60, 0.3);
+}
+
+/* ===== MEDIA QUERIES PARA RESPONSIVIDAD MÓVIL ===== */
+
+/* Tablets y dispositivos medianos */
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+        margin-top: 80px; /* Espacio para botones fijos */
+    }
+
+    .header {
+        padding: 20px 0;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name {
+        font-size: 2em;
+    }
+
+    .content-section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+    }
+
+    /* Hacer la tabla más compacta */
+    .schedule-table {
+        font-size: 0.8em;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 8px 4px;
+    }
+
+    .schedule-table td:first-child {
+        font-size: 0.75em;
+        font-weight: 700;
+    }
+}
+
+/* Móviles pequeños */
+@media screen and (max-width: 480px) {
+    .container {
+        margin: 5px;
+        padding: 10px;
+        margin-top: 90px;
+    }
+
+    .header {
+        padding: 15px 0;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .name {
+        font-size: 1.6em;
+    }
+
+    .content-section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .section-title {
+        font-size: 1.3em;
+    }
+
+    /* Mantener estructura de tabla pero más compacta */
+    .schedule-table {
+        font-size: 0.65em;
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+    }
+
+    .schedule-table thead,
+    .schedule-table tbody {
+        display: table;
+        width: 100%;
+    }
+
+    .schedule-table thead {
+        width: calc(100% - 17px); /* Compensar scrollbar */
+    }
+
+    .schedule-table tr {
+        display: table-row;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        display: table-cell;
+        padding: 6px 3px;
+        white-space: nowrap;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .schedule-table th {
+        font-size: 0.9em;
+        padding: 8px 3px;
+    }
+
+    .schedule-table td:first-child {
+        font-size: 0.85em;
+        font-weight: 700;
+        padding: 6px 5px;
+        min-width: 40px;
+    }
+
+    /* Ajustar anchos de columnas para móvil */
+    .schedule-table th:first-child,
+    .schedule-table td:first-child {
+        width: 15%;
+    }
+
+    .schedule-table th:not(:first-child),
+    .schedule-table td:not(:first-child) {
+        width: 17%;
+    }
+
+    /* Botones de navegación más pequeños en móvil */
+    .back-button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+        top: 10px;
+        left: 10px;
+    }
+
+    .switch {
+        top: 10px;
+        right: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Móviles muy pequeños (menos de 360px) */
+@media screen and (max-width: 360px) {
+    .container {
+        margin: 2px;
+        padding: 8px;
+    }
+
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .name {
+        font-size: 1.4em;
+    }
+
+    .section-title {
+        font-size: 1.2em;
+    }
+
+    .schedule-table {
+        font-size: 0.55em;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 4px 2px;
+    }
+
+    .schedule-table td:first-child {
+        font-size: 0.9em;
+        padding: 4px 3px;
+    }
+
+    .back-button {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+
+    .switch {
+        font-size: 12px;
+    }
+
+    /* Hacer los formularios más compactos */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* Landscape en móviles */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .container {
+        margin-top: 60px;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .profile-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .content-section {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
 }
