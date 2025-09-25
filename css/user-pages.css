@@ -1,3 +1,12 @@
+/* Enlace Universidad de Extremadura: azul normal, violeta si visitado */
+.unex-link:link {
+    color: #1976d2;
+    text-decoration: underline;
+}
+.unex-link:visited {
+    color: #8e24aa;
+    text-decoration: underline;
+}
 /* ===== ESTILOS ESPECÍFICOS PARA PÁGINAS DE USUARIO - TEMA CLARO ===== */
 
 /* Ajuste del body para página personal - TEMA CLARO */
@@ -207,6 +216,30 @@ input:checked + .slider:before {
     margin-bottom: 20px;
     color: #000000;
     line-height: 1.6;
+}
+
+.degree-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.degree-link:hover {
+    color: #2980b9;
+    border-bottom-color: #3498db;
+    text-shadow: 0 1px 2px rgba(52, 152, 219, 0.2);
+}
+
+.degree-link:visited {
+    color: #8e44ad;
+}
+
+.degree-link:visited:hover {
+    color: #7d3c98;
+    border-bottom-color: #8e44ad;
 }
 
 /* Tablas generales - TEMA CLARO */
@@ -618,6 +651,25 @@ body.personal-page:has(#switch:not(:checked)) .section-title::after {
 
 body.personal-page:has(#switch:not(:checked)) .paragraph {
     color: #b8b8b8;
+}
+
+body.personal-page:has(#switch:not(:checked)) .degree-link {
+    color: #74b9ff;
+}
+
+body.personal-page:has(#switch:not(:checked)) .degree-link:hover {
+    color: #0984e3;
+    border-bottom-color: #74b9ff;
+    text-shadow: 0 1px 2px rgba(116, 185, 255, 0.3);
+}
+
+body.personal-page:has(#switch:not(:checked)) .degree-link:visited {
+    color: #a29bfe;
+}
+
+body.personal-page:has(#switch:not(:checked)) .degree-link:visited:hover {
+    color: #6c5ce7;
+    border-bottom-color: #a29bfe;
 }
 
 /* Tablas - TEMA OSCURO */
