@@ -23,8 +23,8 @@
     <div class="container" tabindex="0" aria-label="Contenido principal">
         <!-- Header con nombre y foto -->
         <header class="header" tabindex="0" aria-labelledby="nombre-marcos">
-            <img src="../../images/marcos.png" alt="Foto de Marcos Cabrera Antolin" class="profile-photo">
-            <h1 class="name" id="nombre-marcos">Marcos Cabrera Antolin</h1>
+            <img src="../../images/marcos.png" alt="Foto de Marcos Cabrera Antolín" class="profile-photo">
+            <h1 class="name" id="nombre-marcos">Marcos Cabrera Antolín</h1>
             <p style="font-size: 1.2em; color: #666;">Estudiante DISI</p>
         </header>
 
@@ -32,7 +32,8 @@
         <section class="content-section" tabindex="0" aria-labelledby="acerca-de-mi">
             <h2 class="section-title" id="acerca-de-mi">Acerca de Mí</h2>
             <p class="paragraph">
-                ¡Hola! Soy Marcos Cabrera Antolin, estudiante del Grado en Ingeniería Informática en Ingeniería de Computadores en la Universidad de Extremadura. 
+                ¡Hola! Soy Marcos Cabrera Antolín, estudiante del Grado en Ingeniería Informática en Ingeniería de Computadores en la 
+                <a href="https://www.unex.es" target="_blank" rel="noopener" tabindex="0" aria-label="Ir a la Universidad de Extremadura">Universidad de Extremadura</a>. 
                 Actualmente cursando el tercer año, me fascina el desarrollo de robotica y las nuevas tecnologías.
             </p>
             <p class="paragraph">
@@ -40,6 +41,13 @@
                 mis conocimientos en programación, robotica y inteligencia artificial. Me considero una persona con muchas ganas de aprender, con motivación para
                 mejorar cada día y abierta a afrontar nuevos retos académicos y profesionales.
             </p>
+            <h3>Mis aficiones y gustos:</h3>
+            <ul class="interests-list">
+                <li>La programación</li>
+                <li>La robótica</li>
+                <li>Futbol sala</li>
+                <li>Jugar videojuegos</li>
+            </ul>
         </section>
 
         <!-- Habilidades Técnicas -->
@@ -180,29 +188,47 @@
         <section class="content-section" tabindex="0" aria-labelledby="formulario-contacto">
             <h2 class="section-title" id="formulario-contacto">Formulario de Contacto</h2>
             <div class="form-container">
-                <form action="#" method="POST" aria-labelledby="formulario-contacto">
+                <form action="https://formsubmit.co/mcabrerai@alumnos.unex.es" method="POST" aria-labelledby="formulario-contacto">
+                    
+                    <!-- Evita captcha automático -->
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!-- Redirección tras enviar -->
+                    <input type="hidden" name="_next" value="file:///home/markete/Escritorio/DISI/DISI_Grupo/DISI/DISI/html/UserPages/Marcos.html">
+
+                    <!-- Campos del formulario -->
                     <div class="form-group">
                         <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre y apellidos." tabindex="0" aria-required="true">
+                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre y apellidos.">
                     </div>
 
                     <div class="form-group">
                         <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required placeholder="XXXX@alumnos.unex.es" tabindex="0" aria-required="true">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="asunto">Asunto:</label>
-                        <input type="text" id="asunto" name="asunto" required placeholder="Escribe el asunto..." tabindex="0" aria-required="true">
+                        <input type="email" id="email" name="email" required placeholder="XXXX@alumnos.unex.es">
                     </div>
 
                     <div class="form-group">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required tabindex="0" aria-required="true"></textarea>
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto" required 
+                            onchange="document.getElementById('asunto_otro').hidden = this.value !== 'otro';">
+                            <option value="" disabled selected>Elige el asunto...</option>
+                            <option value="Consulta académica">Consulta académica</option>
+                            <option value="Propuesta de proyecto">Propuesta de proyecto</option>
+                            <option value="Colaboración">Colaboración</option>
+                            <option value="Sugerencia">Sugerencia</option>
+                            <option value="otro">Otro...</option>
+                        </select>
+                        <input type="text" id="asunto_otro" name="asunto_otro" placeholder="Escribe tu asunto..." hidden>
                     </div>
                     
-                    <button type="submit" class="btn" accesskey="e" tabindex="0" aria-label="Enviar Mensaje">Enviar Mensaje</button>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Enviar Mensaje</button>
                 </form>
+
             </div>
         </section>
 
