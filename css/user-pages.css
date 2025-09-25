@@ -13,9 +13,10 @@ body.personal-page {
 
 /* Contenedor para página personal - TEMA CLARO */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 900px;
+    margin: 0;
+    margin-left: 8vw;
+    padding: 20px 32px 20px 32px;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
@@ -168,12 +169,13 @@ input:checked + .slider:before {
 /* Secciones de contenido - TEMA CLARO */
 .content-section {
     margin-bottom: 40px;
-    padding: 30px;
+    padding: 30px 40px 30px 40px;
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
     border: 1px solid #ecf0f1;
+    text-align: left;
 }
 
 .content-section:hover {
@@ -185,7 +187,7 @@ input:checked + .slider:before {
     font-size: 1.8em;
     color: #2c3e50;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
     font-weight: 600;
     position: relative;
 }
