@@ -3,82 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal - Daniel</title>
-    <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="../../css/user-pages.css">
-</head>
-<body class="personal-page">
-    <a href="../index.html" class="back-button">
-        ← Volver al inicio
-    </a>
-    
-    <label for="switch" class="switch">
-        <input id="switch" type="checkbox" checked />
-        <span class="slider"></span>
-        <span class="decoration"></span>
-    </label>
-    
-    <div class="container">
-        <header class="header">
-            <img src="../../images/dani.png" alt="Mi foto" class="profile-photo">
-            <h1 class="name">Daniel Solís</h1>
-            <p style="font-size: 1.2em; color: #666;">Estudiante DISI</p>
-        </header>
-
-        <section class="content-section">
-            <h2 class="section-title">Acerca de Mí</h2>
-            <p class="paragraph">
-                ¡Hola! Soy Daniel Solís, estudiante del Grado en Ingeniería Informática en la Universidad de Extremadura. 
-                Actualmente cursando el tercer año, me apasiona el mundo de la tecnología y la programación.
-            </p>
-            <p class="paragraph">
-                Mi interés principal se centra en protección de software, y estoy siempre buscando nuevos desafíos 
-                que me permitan crecer tanto profesional como personalmente.
-            </p>
-        </section>
-
-        <!-- Habilidades Técnicas -->
-        <section class="content-section">
-            <h2 class="section-title">Mis Habilidades Técnicas</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tecnología</th>
-                        <th>Nivel</th>
-                        <th>Experiencia</th>
-                        <th>Proyectos</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML/CSS</td>
-                        <td>Junior</td>
-                        <td>1 año</td>
-                        <td>5+</td>
-                    </tr>
-                    <tr>
-                        <td>C/C++</td>
-                        <td>Avanzado</td>
-                        <td>7 años</td>
-                        <td>50+</td>
-                    </tr>
-                    <tr>
-                        <td>Ensamblador</td>
-                        <td>Avanzado</td>
-                        <td>7 años</td>
-                        <td>15+</td>
-                    </tr>
-                    <tr>
-                        <td>Ingeniería Inversa</td>
-                        <td>Intermedio</td>
-                        <td>7 años</td>
-                        <td>10</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Tabla de Horario -->
         <section class="content-section">
             <h2 class="section-title">Mi Horario de Clases</h2>
             <table class="schedule-table">
@@ -95,33 +19,33 @@
                 <tbody>
                     <tr>
                         <td><strong>8:30</strong></td>
-                            <td class="free">Libre</td>
-                            <td class="subject" title="Ingeniería del Software">IS</td>
-                            <td class="subject" title="Administración y Legislación Informática">ALI</td>
-                            <td class="subject" title="Ingeniería del Software">IS</td>
-                            <td class="subject" title="Administración y Legislación Informática">ALI</td>
+                        <td class="free">Libre</td>
+                        <td class="subject"><span class="tooltip" data-tooltip="Ingeniería de Software">IS</span></td>
+                        <td class="subject"><span class="tooltip" data-tooltip="Auditoría y Legislación Informática">ALI</span></td>
+                        <td class="subject"><span class="tooltip" data-tooltip="Ingeniería de Software">IS</span></td>
+                        <td class="subject"><span class="tooltip" data-tooltip="Auditoría y Legislación Informática">ALI</span></td>
                     </tr>
                     <tr>
                         <td><strong>10:00</strong></td>
                         <td class="free">Libre</td>
-                        <td class="subject" title="Redes de Ordenadores">RO</td>
-                        <td class="subject" title="Diseño e Interacción de Sistemas de Información">DISI</td>
-                        <td class="subject" title="Diseño e Interacción de Sistemas de Información">DISI</td>
-                        <td class="subject" title="Redes de Ordenadores">RO</td>
+                        <td class="subject"><span class="tooltip" data-tooltip="Redes de Ordenadores">RO</span></td>
+                        <td class="subject"><span class="tooltip" data-tooltip="Diseño e Interacción en Sistemas de Información">DISI</span></td>
+                        <td class="subject"><span class="tooltip" data-tooltip="Diseño e Interacción en Sistemas de Información">DISI</span></td>
+                        <td class="subject"><span class="tooltip" data-tooltip="Redes de Ordenadores">RO</span></td>
                     </tr>
                     <tr>
                         <td><strong>11:30</strong></td>
-                        <td class="lab" title="Laboratorio de Redes de Ordenadores">Lab RO</td>
-                        <td class="subject" title="Sistemas Operativos">SO</td>
-                        <td class="lab" title="Laboratorio de Ingeniería del Software">Lab IS</td>
-                        <td class="lab" title="Laboratorio de Sistemas Operativos">Lab SO</td>
+                        <td class="lab"><span class="tooltip" data-tooltip="Laboratorio Redes de Ordenadores">Lab RO</span></td>
+                        <td class="subject"><span class="tooltip" data-tooltip="Sistemas Operativos">SO</span></td>
+                        <td class="lab"><span class="tooltip" data-tooltip="Laboratorio Ingeniería de Software">Lab IS</span></td>
+                        <td class="lab"><span class="tooltip" data-tooltip="Laboratorio Sistemas Operativos">Lab SO</span></td>
                         <td class="free">Libre</td>
                     </tr>
                     <tr>
                         <td><strong>13:00</strong></td>
-                        <td class="subject" title="Sistemas Operativos">SO</td>
-                        <td class="lab" title="Laboratorio de Administración y Legislación Informática">Lab ALI</td>
-                        <td class="lab" title="Laboratorio de Diseño e Interacción de Sistemas de Información">Lab DISI</td>
+                        <td class="subject"><span class="tooltip" data-tooltip="Sistemas Operativos">SO</span></td>
+                        <td class="lab"><span class="tooltip" data-tooltip="Laboratorio Auditoría y Legislación Informática">Lab ALI</span></td>
+                        <td class="lab"><span class="tooltip" data-tooltip="Laboratorio Diseño e Interacción en Sistemas de Información">Lab DISI</span></td>
                         <td class="free">Libre</td>
                         <td class="free">Libre</td>
                     </tr>
@@ -132,6 +56,50 @@
                         <td class="free">Libre</td>
                         <td class="free">Libre</td>
                         <td class="free">Libre</td>
+                    </tr>
+                    <tr>
+                        <td><strong>15:30</strong></td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                    </tr>
+                    <tr>
+                        <td><strong>17:00</strong></td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                    </tr>
+                    <tr>
+                        <td><strong>18:30</strong></td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                    </tr>
+                    <tr>
+                        <td><strong>20:00</strong></td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="schedule-legend">
+                <strong>Leyenda:</strong> 
+                <span class="legend-subject">■</span> Clases teóricas &nbsp;&nbsp;
+                <span class="legend-lab">■</span> Laboratorios &nbsp;&nbsp;
+                <span class="legend-free">■</span> Tiempo libre
+            </div>
+        </section>
+                        <td></td>
+                        <td class="subject">ALI</td>
                     </tr>
                     <tr>
                         <td><strong>15:30</strong></td>
