@@ -184,7 +184,7 @@ input:checked + .slider:before {
     font-size: 1.8em;
     color: #000000;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
     font-weight: 600;
     position: relative;
 }
