@@ -92,10 +92,10 @@
         </section>
 
         <!-- Tabla de Horario -->
+<!-- ...existing code... -->
         <section class="content-section" tabindex="0" aria-labelledby="horario-clases">
             <h2 class="section-title" id="horario-clases">Mi Horario de Clases</h2>
             <table class="schedule-table" role="table" aria-label="Horario de clases">
-                
                 <thead>
                     <tr>
                         <th scope="col">Hora</th>
@@ -109,80 +109,78 @@
                 <tbody>
                     <tr>
                         <td><strong>8:30</strong></td>
-                        <td></td>
-                        <td class="subject">IS</td>
-                        <td class="subject">ALI</td>
-                        <td class="subject">IS</td>
-                        <td class="subject">ALI</td>
+                        <td class="free">Libre</td>
+                        <td class="subject"><abbr title="Ingeniería del Software">IS</abbr></td>
+                        <td class="subject"><abbr title="Auditoria y Legislación Informática">ALI</abbr></td>
+                        <td class="subject"><abbr title="Ingeniería del Software">IS</abbr></td>
+                        <td class="subject"><abbr title="Auditoria y Legislación Informática">ALI</abbr></td>
                     </tr>
                     <tr>
                         <td><strong>10:00</strong></td>
-                        <td></td>
-                        <td class="subject">RO</td>
-                        <td class="subject">DISI</td>
-                        <td class="subject">DISI</td>
-                        <td class="subject">RO</td>
+                        <td class="free">Libre</td>
+                        <td class="subject"><abbr title="Redes de Ordenadores">RO</abbr></td>
+                        <td class="subject"><abbr title="Diseño e Interfaces de Sistemas de Información">DISI</abbr></td>
+                        <td class="subject"><abbr title="Diseño e Interfaces de Sistemas de Información">DISI</abbr></td>
+                        <td class="subject"><abbr title="Redes de Ordenadores">RO</abbr></td>
                     </tr>
                     <tr>
                         <td><strong>11:30</strong></td>
-                        <td class="lab">Lab RO</td>
-                        <td class="subject">SO</td>
-                        <td class="lab">Lab IS</td>
-                        <td class="lab">Lab ALI</td>
-                        <td class="lab">Lab SO</td>
+                        <td class="lab"><abbr title="Laboratorio de Redes de Ordenadores">Lab RO</abbr></td>
+                        <td class="subject"><abbr title="Sistemas Operativos">SO</abbr></td>
+                        <td class="lab"><abbr title="Laboratorio de Ingeniería del Software">Lab IS</abbr></td>
+                        <td class="lab"><abbr title="Laboratorio de Auditoria y Legislación Informática">Lab ALI</abbr></td>
+                        <td class="lab"><abbr title="Laboratorio de Sistemas Operativos">Lab SO</abbr></td>
                     </tr>
                     <tr>
                         <td><strong>13:00</strong></td>
-                        <td class="subject">SO</td>
-                        <td></td>
-                        <td class="lab">Lab DISI</td>
-                        <td></td>
-                        <td></td>
+                        <td class="subject"><abbr title="Sistemas Operativos">SO</abbr></td>
+                        <td class="free">Libre</td>
+                        <td class="lab"><abbr title="Laboratorio de Diseño e Interfaces de Sistemas de Información">Lab DISI</abbr></td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
                     </tr>
-
                     <tr>
                         <td><strong>14:30</strong></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
                     </tr>
-                    
                     <tr>
                         <td><strong>17:30</strong></td>
-                        <td></td>
-                        <td class="subject">EE</td>
-                        <td></td>
-                        <td class="subject">EE</td>
-                        <td></td>
+                        <td class="free">Libre</td>
+                        <td class="subject"><abbr title="Economía y Empresa">EE</abbr></td>
+                        <td class="free">Libre</td>
+                        <td class="subject"><abbr title="Economía y Empresa">EE</abbr></td>
+                        <td class="free">Libre</td>
                     </tr>
-
                     <tr>
                         <td><strong>18:30</strong></td>
-                        <td class="subject">EE</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="subject"><abbr title="Economía y Empresa">EE</abbr></td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
                     </tr>
-
                     <tr>
                         <td><strong>19:30</strong></td>
-                        <td class="lab">Seminario EE</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="lab"><abbr title="Seminario de Economía y Empresa">Seminario EE</abbr></td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
+                        <td class="free">Libre</td>
                     </tr>
                 </tbody>
             </table>
             <div style="margin-top: 15px; font-size: 0.9em; color: #666;" tabindex="0">
                 <strong>Leyenda:</strong> 
-                <span style="color: #1976d2;">■</span> Clases teóricas &nbsp;&nbsp;
+                <span style="color: #2acf5b;">■</span> Horas Libres &nbsp;&nbsp;
+                <span style="color: #ffbd68;">■</span> Clases teóricas &nbsp;&nbsp;
                 <span style="color: #f57c00;">■</span> Laboratorios
             </div>
         </section>
+        <!-- ...existing code... -->
 
         <!-- Formulario de contacto -->
         <section class="content-section" tabindex="0" aria-labelledby="formulario-contacto">
