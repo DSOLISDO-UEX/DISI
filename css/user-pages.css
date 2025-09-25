@@ -1,3 +1,55 @@
+/* Responsive container for skills table */
+.responsive-table-container {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ecf0f1;
+    min-width: 400px;
+}
+
+.skills-table th, .skills-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+    transition: background-color 0.3s ease;
+}
+
+.skills-table th {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skills-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.skills-table tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+
+@media screen and (max-width: 600px) {
+    .skills-table {
+        font-size: 0.8em;
+        min-width: 350px;
+    }
+    .skills-table th, .skills-table td {
+        padding: 8px 4px;
+    }
+}
 /* Enlace Universidad de Extremadura: azul normal, violeta si visitado */
 .unex-link:link {
     color: #1976d2;
