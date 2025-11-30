@@ -1,0 +1,215 @@
+TÉRMINOS Y CONDICIONES DE USO - PROYECTO LAMBDA (LABORATORIO DE ACÚSTICA UEx)
+
+Última actualización: 02/11/2025 
+
+1. INTRODUCCIÓN Y ACEPTACIÓN DE LOS TÉRMINOS
+1.1. Titularidad del Servicio
+Los presentes Términos y Condiciones (en adelante, los "Términos") regulan el acceso y uso de la aplicación móvil y la plataforma web desarrolladas bajo el Proyecto Lambda, una iniciativa del Laboratorio de Acústica de la Universidad de Extremadura (UEx). El servicio ha sido desarrollado por el equipo técnico compuesto por Daniel Solís Domínguez, Raúl Parra Collado, Manuel Piris Martínez, Marcos Cabrera Antolín y Noel León Llorente.
+
+
+1.2. Aceptación del Usuario
+Al descargar, acceder, instalar o utilizar la aplicación móvil o la plataforma web (conjuntamente, el "Servicio" o la "Plataforma"), usted acepta estar legalmente vinculado por estos Términos. Si no acepta estos términos, no debe utilizar el servicio. El uso del servicio implica la aceptación plena de las condiciones aquí expuestas relativas a la medición acústica, pruebas de salud auditiva y participación en estudios de investigación.
+
+
+
+1.3. Ámbito de Aplicación
+Estos términos aplican a todos los usuarios, diferenciándose dos perfiles principales según su nivel de acceso y funcionalidad:
+
+
+Usuarios Generales: Estudiantes, deportistas o particulares que utilizan la app para autogestión de salud auditiva.
+
+
+Usuarios Investigadores: Académicos, científicos o personal autorizado que accede a la plataforma web para el análisis de datos masivos y generación de estudios.
+
+2. DEFINICIONES
+A los efectos de estos Términos, se aplicarán las siguientes definiciones basadas en la arquitectura del sistema:
+
+
+"Evento de Pico de Ruido": Registro automático generado cuando el nivel de decibelios supera un umbral predefinido, asociado a una ubicación y marca temporal.
+
+
+"Prueba Auditiva": Funcionalidad de la aplicación que permite al Usuario General evaluar su percepción de frecuencias (graves y agudas) para detectar indicios de pérdida auditiva.
+
+
+
+
+"Mapa de Calor": Visualización gráfica en la plataforma web que agrega datos anónimos de múltiples usuarios para representar niveles de contaminación acústica en zonas urbanas mediante códigos de color (verde, amarillo, rojo).
+
+
+"Calibración": Proceso técnico obligatorio mediante el cual el Usuario ajusta la sensibilidad del micrófono de su dispositivo para asegurar la fiabilidad de las mediciones acústicas.
+
+
+
+"Datos de Investigación": Conjunto de mediciones acústicas, geolocalización y metadatos anonimizados recopilados para fines científicos por el Laboratorio de Acústica.
+
+
+
+3. FINALIDAD DEL SERVICIO Y NATURALEZA NO MÉDICA
+3.1. Herramienta de Concienciación y Prevención
+El objetivo principal del Proyecto Lambda es la concienciación sobre la salud auditiva y la investigación acústica ambiental. La aplicación está diseñada para ayudar a usuarios expuestos a entornos ruidosos (como pabellones deportivos, piscinas o entornos urbanos) a monitorear su exposición.
+
+
+
+
+3.2. Exención de Responsabilidad Médica
+El Usuario reconoce y acepta expresamente que la Aplicación no es un dispositivo médico certificado ni sustituye el diagnóstico profesional.
+
+Las Pruebas Auditivas ofrecidas en la app son herramientas de cribado (screening) orientativo.
+
+
+Los resultados que indiquen "descenso en la percepción de frecuencias" o "pérdida leve de audición"  son meramente informativos.
+
+
+El Servicio no debe utilizarse para autodiagnosticar patologías como la hipoacusia o acúfenos.
+
+Se recomienda encarecidamente al Usuario que, ante cualquier resultado anómalo exportado en los informes PDF, acuda a un especialista otorrinolaringólogo para una evaluación clínica formal.
+
+
+3.3. Uso en Investigación
+Para el perfil Investigador, la plataforma sirve como herramienta de análisis de datos ambientales, permitiendo la identificación de patrones de ruido urbano y la validación de soluciones de aislamiento.
+
+
+4. CUENTAS DE USUARIO Y PERFILES
+4.1. Perfil de Usuario General
+El Usuario General tiene acceso a funcionalidades limitadas al ámbito personal y preventivo:
+
+Registro: El usuario debe proporcionar datos básicos. Si es estudiante (ej. Ciencias del Deporte), puede vincular su perfil a actividades académicas.
+
+
+Funcionalidades Permitidas: Medición en tiempo real, historial personal, calibración de micrófono, configuración de alertas vibratorias y visuales, y acceso a material educativo.
+
+
+Responsabilidad de Datos: El Usuario es responsable de la veracidad de los datos de salud ingresados y de mantener la confidencialidad de sus informes médicos exportados.
+
+
+4.2. Perfil de Investigador
+El acceso al perfil de Investigador está restringido a personal autorizado por la UEx o entidades colaboradoras municipales.
+
+
+Credenciales: Requiere autenticación avanzada para acceder al panel de administración y dashboard de análisis.
+
+
+Privilegios: Capacidad para configurar alertas globales, visualizar mapas de calor en tiempo real, exportar grandes volúmenes de datos (CSV, informes PDF) y validar la calidad de los datos de terceros.
+
+
+
+Restricciones: Está estrictamente prohibido utilizar los datos para re-identificar a usuarios anónimos o para fines comerciales no autorizados por el proyecto.
+
+5. POLÍTICA DE DATOS, PRIVACIDAD Y GEOLOCALIZACIÓN
+5.1. Recopilación de Datos Acústicos
+La aplicación recopila datos del micrófono del dispositivo móvil para medir niveles de presión sonora (dB).
+
+
+Medición en Primer Plano: Cuando el usuario visualiza el medidor.
+
+
+Medición en Segundo Plano: Para generar alertas preventivas continuas, la app puede monitorear el ruido ambiental incluso con la pantalla apagada, sujeto a los permisos del sistema operativo.
+
+5.2. Geolocalización y Mapas de Calor
+Para cumplir con los objetivos de investigación del perfil Julio, la aplicación recopila datos de ubicación GPS asociados a las mediciones de ruido.
+
+Anonimización: Los datos visualizados en los "Mapas de Calor" (zonas verdes, amarillas, rojas) son agregados y anonimizados. No se mostrará la ubicación exacta de un usuario individual en tiempo real a otros usuarios.
+
+
+Uso Urbano: Los datos se utilizan para comparar contaminación acústica entre zonas (ej. "Campus Universitario" vs "Barrio Norte").
+
+5.3. Datos de Salud
+Los resultados de las pruebas auditivas y el historial de exposición se almacenan localmente en el dispositivo y se sincronizan con el servidor de forma segura.
+
+
+Exportación: El usuario tiene derecho a exportar sus datos médicos y de exposición en formato PDF para uso personal o clínico.
+
+
+Propiedad: Los datos de salud individual pertenecen al Usuario.
+
+5.4. Calidad y Validación de Datos
+El sistema incluye algoritmos para detectar "mediciones anómalas" o de dispositivos "no calibrados". El Investigador se reserva el derecho de descartar o marcar como inválidos aquellos datos que no cumplan con los estándares de calidad para el estudio científico.
+
+
+6. OBLIGACIONES Y RESPONSABILIDADES DEL USUARIO
+6.1. Obligación de Calibración
+Dada la variabilidad de hardware en los dispositivos móviles, el Usuario se compromete a realizar la calibración del micrófono periódicamente o al cambiar de hardware (ej. nuevos auriculares o cambio de móvil).
+
+El Proyecto Lambda no garantiza la precisión de las mediciones (dB) si el dispositivo no ha sido calibrado en un entorno silencioso según las instrucciones de la app.
+
+El uso de datos no calibrados puede afectar negativamente a la investigación global.
+
+6.2. Uso en Entornos Deportivos y Actividades Físicas
+El Usuario (ej. perfil Vicente) utiliza la aplicación bajo su propio riesgo durante la práctica deportiva.
+
+
+Seguridad Física: El Usuario no debe distraerse manipulando la aplicación durante actividades que requieran atención plena (ej. partidos de voleibol, uso de maquinaria de gimnasio).
+
+
+
+Alertas: Las alertas (vibración/visuales) son ayudas auxiliares. El Usuario no debe confiar exclusivamente en la app para proteger su audición y debe usar protección auditiva física (tapones) siempre que su juicio o las normas del recinto lo indiquen.
+
+6.3. Veracidad de la Información
+El Usuario se compromete a no falsificar datos de ubicación ni simular entornos de ruido artificialmente para alterar los mapas de calor o las estadísticas del estudio.
+
+7. OBLIGACIONES DEL INVESTIGADOR Y GESTIÓN DE LA PLATAFORMA
+7.1. Uso Ético de la Información
+El Investigador se compromete a utilizar los datos exportados (CSV, gráficos) exclusivamente para fines científicos, académicos o de política pública (ej. informes para ayuntamientos).
+
+
+7.2. Configuración de Alertas Públicas
+El Investigador tiene la potestad de modificar los umbrales de alerta para zonas geográficas específicas (ej. bajar el límite a 75 dB en zonas residenciales nocturnas). Estas modificaciones afectarán a las notificaciones push que reciben los usuarios en dichas áreas.
+
+7.3. Gestión de Grandes Volúmenes de Datos
+En caso de exportaciones masivas de datos históricos (Big Data), el sistema puede requerir la segmentación de archivos (ej. división por trimestres) para evitar fallos técnicos. El Investigador acepta estas limitaciones técnicas del sistema web.
+
+8. LIMITACIONES TÉCNICAS Y EXCLUSIÓN DE GARANTÍAS
+8.1. Disponibilidad y Conexión (Modo Offline)
+Aunque la aplicación dispone de capacidad para almacenar datos localmente en caso de pérdida de conexión (ej. durante un partido en un pabellón sin cobertura) , la UEx no garantiza la sincronización perfecta de datos si el dispositivo permanece desconectado por periodos prolongados o si se borra la caché de la aplicación antes de la reconexión.
+
+
+8.2. Consumo de Batería y Recursos
+El uso continuo del micrófono y el GPS para el monitoreo de ruido puede conllevar un alto consumo de batería.
+
+
+Interrupción de Pruebas: Si el nivel de batería es crítico (ej. 5%), la aplicación puede detener o guardar parcialmente las pruebas auditivas para proteger el dispositivo.
+
+El Usuario es responsable de asegurar que su dispositivo tenga carga suficiente para completar las mediciones.
+
+8.3. Precisión de las Mediciones
+La aplicación utiliza el hardware del teléfono móvil. Los valores de decibelios (dB) mostrados son aproximaciones. El Proyecto Lambda no se hace responsable por discrepancias entre las mediciones de la app y las realizadas con sonómetros profesionales de clase 1 o 2, salvo que se utilice equipo externo calibrado conectado al sistema.
+
+
+8.4. Accesibilidad
+El Servicio se esfuerza por cumplir requisitos de accesibilidad, incluyendo alertas de alto contraste, vibración personalizable y compatibilidad con lectores de pantalla. No obstante, no se garantiza la compatibilidad universal con todos los dispositivos de asistencia.
+
+
+9. PROPIEDAD INTELECTUAL E INDUSTRIAL
+9.1. Derechos del Software
+Todo el código fuente, diseño de interfaces, algoritmos de procesamiento de audio, logotipos (Lambda/UEx) y material educativo contenido en la aplicación son propiedad exclusiva de la Universidad de Extremadura y los autores del Proyecto Lambda.
+
+
+9.2. Licencia de Uso
+Se otorga al Usuario una licencia limitada, no exclusiva e intransferible para usar la aplicación con fines personales (Vicente) o de investigación autorizada (Julio). Queda prohibida la ingeniería inversa, descompilación o redistribución del software sin permiso escrito.
+
+9.3. Contenido Generado por el Usuario
+Al participar en el estudio, el Usuario cede a la UEx los derechos de explotación de los datos acústicos anonimizados (no los datos de salud personal) para su inclusión en artículos científicos, tesis doctorales y mapas de ruido públicos.
+
+
+10. MODIFICACIONES Y ACTUALIZACIONES
+10.1. Cambios en el Servicio
+El Laboratorio de Acústica se reserva el derecho de modificar, suspender o discontinuar cualquier aspecto del servicio (ej. cambiar los parámetros de los informes automáticos o la frecuencia de muestreo) en cualquier momento.
+
+10.2. Actualización de los Términos
+Estos Términos pueden ser actualizados para reflejar cambios legislativos o nuevas funcionalidades (ej. nuevas pruebas auditivas). Se notificará a los usuarios sobre cambios significativos a través de la aplicación.
+
+11. LEGISLACIÓN APLICABLE Y JURISDICCIÓN
+Estos Términos se rigen por la legislación española. Para cualquier controversia que pudiera derivarse del acceso o uso del Servicio, las partes se someten a los juzgados y tribunales de la ciudad de Cáceres, renunciando a cualquier otro fuero que pudiera corresponderles, dado que el proyecto tiene su sede en la Facultad y Universidad de dicha localidad.
+
+
+12. CONTACTO Y SOPORTE
+Para consultas relacionadas con el funcionamiento de la app, problemas con la calibración o dudas sobre el tratamiento de datos en la investigación:
+
+Entidad: Laboratorio de Acústica, UEx.
+
+Dirección: Universidad de Extremadura, Cáceres.
+
+
+Soporte Técnico: A través de la sección de "Ayuda" o "Tutoriales" dentro de la aplicación.
+
+AL HACER CLIC EN "ACEPTAR" O UTILIZAR LA APP PROYECTO LAMBDA, USTED CONFIRMA QUE HA LEÍDO, COMPRENDIDO Y ACEPTADO ESTOS TÉRMINOS Y CONDICIONES, Y QUE ENTIENDE QUE ESTA APLICACIÓN NO ES UN SUSTITUTO DE ATENCIÓN MÉDICA PROFESIONAL.
