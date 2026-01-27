@@ -1,5 +1,11 @@
 Ce manuel fournit de l'aide concernant les différentes fonctionnalités de cette page.
 
+# En-tête
+![en-tête](https://i.imgur.com/vbNO0NV.png)
+
+En commençant par la gauche, il y a un interrupteur qui permet de changer la langue entre : Espagnol (ES), Français (FR) et Anglais (EN).
+Il y a une icône de cloche sur la droite, qui peut être utilisée pour activer/désactiver rapidement les notifications push de l'application sur le téléphone.
+
 # Compteur en temps réel
 ![compteur](https://i.imgur.com/nQ44394.png)
 
@@ -32,5 +38,6 @@ Il y a 3 types d'alertes :
 - Léger : Peut être gênant mais ne causera pas de dommages.
 - Grave : Une exposition prolongée et répétée peut causer des dommages auditifs.
 - Très grave : Le bruit est si fort qu'une exposition, même minime, peut causer des problèmes.
+
 
 Pour naviguer à travers les différentes vues du tableau, utilisez les flèches de direction en bas.
