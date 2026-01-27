@@ -1,5 +1,11 @@
 This manual provides help regarding the various features of this page.
 
+# Header
+![header](https://i.imgur.com/vbNO0NV.png)
+
+Starting from the left, there's a switch that allows you to change the language between: Spanish (ES), French (FR) and English (EN).
+There's a bell icon on the right, which can be used quickly to turn on/off push notifications of the application in the phone.
+
 # Real-time Meter
 ![meter](https://i.imgur.com/nQ44394.png)
 
@@ -32,5 +38,6 @@ There are 3 types of alerts:
 - Low: May be annoying but will not cause damage.
 - High: Long-term and repeated exposure can cause ear damage.
 - Critical: The noise is so loud that even minimal exposure can cause problems.
+
 
 To navigate through the different table views, use the arrow keys at the bottom.
