@@ -1,5 +1,11 @@
 En este manual se muestra ayuda relacionada con las distintas funcionalidades de esta página.
 
+# Encabezado
+![encabezado](https://i.imgur.com/vbNO0NV.png)
+
+Empezando por la izquierda, hay un interruptor que permite cambiar el idioma entre: Español (ES), Francés (FR) e Inglés (EN).
+Hay un icono de una campana a la derecha, que se puede usar para activar/desactivar rápidamente las notificaciones push de la aplicación en el teléfono.
+
 # Medidor a tiempo real
 ![medidor](https://i.imgur.com/nQ44394.png)
 
@@ -32,5 +38,6 @@ Hay 3 tipos de alertas:
 - Leve: Puede resultar molesta pero no ocasionará daños.
 - Grave: Una exposición de larga duración y repetida puede causar daños en los oídos.
 - Muy grave: El ruido es tan fuerte que una exposición, por mínima que sea, puede causar problemas.
+
 
 Para desplazarse por las distintas vistas de la tabla, se usan las flechas de dirección en la parte inferior.
